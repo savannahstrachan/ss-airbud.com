@@ -2,6 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+
+.navbar{
+	margin-bottom: 0px;
+	font-family: Pacifico;
+}
+
+.welcome{
+	padding-top: 150px;
+
+}
+
+.button{
+	padding-top: 25px;
+}
+
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
