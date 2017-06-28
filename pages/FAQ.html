@@ -1,39 +1,57 @@
 <DOCTYPE! html>
-<html>
-<head>
-
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+           <link rel="stylesheet" href="css/ss_style.css" />
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="bootstrap_project.css" media="screen"/>
-	<link rel="stylesheet" href="style.css" />
-     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://use.fontawesome.com/ddc66602f4.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
   <script>
   $( function() {
-    $( "#accordion" ).accordion();
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  $( function() {
+    var icons = {
+      header: "ui-icon-circle-arrow-e",
+      activeHeader: "ui-icon-circle-arrow-s"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
+    $( "#toggle" ).button().on( "click", 
+
+      function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
   } );
   </script>
 
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="../css/ss_style.css" />
 
-<nav class="navbar navbar-default ss_navbar"> <!-- ADD ADD ADD -->
- <div class="container-fluid">
+</head>
+
+<body>
+<nav class="navbar transparent navbar-default">
+  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed ss_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -83,66 +101,50 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+
 <!-- Jumbotron -->
 
 
-<div class="jumbotron ss_faq">
-<h1>Frequently Asked Questions</h1>
+<div class = "ss_div1">
+<h5>Frequently Asked Questions</h5>
 </div>
 
 <!-- The accordion part -->
 
 <div id="accordion">
-  <h3>Section 1</h3>
-  <div>
+  <h3>What is AirBud?</h3>
+  <div class = "ss_h3">
     <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    We are a platform through which humans can make their dogs available for other humans who, for whatever reason, can't be full-time dog parents. Our users are people with full-time jobs who can't be home during the day to give their dogs the attention or exercise they need. They're people with small apartments who can't have dogs. They're people who aren't sure about what breed is right for them and want to test drive a few models!
     </p>
   </div>
-  <h3>Section 2</h3>
-  <div>
+  <h3>What are the member requirements?</h3>
+    <div class = "ss_h3">
     <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
+    All members with profiles need to be over 18 years old and be the actual owner of their dogs. We won't accept members with a history of animal abuse. <br>All dogs must be up to date with vaccines, and cannot have a bite record. 
     </p>
   </div>
-  <h3>Section 3</h3>
-  <div>
+  <h3>Where do we meet?</h3>
+    <div class = "ss_h3">
     <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    The world is your playground! AirBud users meet in any environment where the dog is most comfortable:
     </p>
     <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
+      <li>The local dog park</li>
+      <li>A walk around the city</li>
+      <li>In the dog-proof home of either human.</li>
     </ul>
   </div>
-  <h3>Section 4</h3>
-  <div>
+  <h3>Are there fees?</h3>
+    <div class = "ss_h4">
     <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
+    Not at all! This is a user-based exchange. We facilitate the meeting of dogs and humans and that's it! Spreading the joy of dogs is what we want to do, and we don't think you should have to spend money to do it. 
     </p>
     <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
+    On the main page, we do have a donate button, as well as links to the SPCA. If you like what we're doing here, or want to support your local animal shelter, you should feel free to give!
     </p>
   </div>
 </div>
-
-
-
 
 
 

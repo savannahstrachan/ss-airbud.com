@@ -1,144 +1,144 @@
-h1 {
-    font-family: "Helvetica";
-    letter-spacing: -2px;  
-    opacity: 0.5;
-    background-color: rgb(207, 207, 209);
-    font-style: bold;
-    font-size: 120px;
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html, body{
+  /*width: 100%;
+  height: 100%;*/
 }
 
-h2 {
-	 font-family: "Helvetica";
-    letter-spacing: -2px;  
-    opacity: 0.8;
-    background-color: rgb(207, 207, 209);
-    font-style: bold;
-    font-size: 75px;
-    text-align: center;
+body{
+  font-size: 14px;
+  line-height: 1.5;
+  color:black;
+  background-color: white;
+  display: block;
 }
 
-h3 {
-   font-family: "Helvetica";
-    letter-spacing: -2px;  
-    opacity: 0.8;
-    background-color: rgb(207, 207, 209);
-    font-style: bold;
-    font-size: 30px;
-    text-align: center;
+.navbar{
+  margin-bottom: 0px;
+  font-family: Pacifico;
 }
 
-.ss_jumbotron {
-	background-image: url("http://incrediblethings.com/wp-content/uploads/2012/06/Sneezing-Dogs.jpg");
-	width: 100%;
-	background-repeat: no-repeat;
-	align: center;
-	height: 500px;
-	background-color: rgb(136, 248, 252);
-	background-position: 50% 50%;
+.welcome{
+  padding-top: 150px;
+
+}
+
+.button{
+  padding-top: 25px;
 }
 
 
-.glyphicon{
-	font-size: 75px;
+
+.profile-create{
+  padding: 100px;
+  display: block;
+  background-color: #ea7210;
 }
+
+.profile-link{
+  padding: 30px;
+  display: block;
+  border: white 1px solid;
+
+}
+
+.samples{
+  padding: 50px;
+  display: block;
+}
+
 
 .thumbnails{
-	text-align: center;
-}
-
+  text-align: center;
 
 }
 
-/*p { 
-	text-align: center;
-	color: black;
-	font: "helvetica";
-	float: right;
+.thumbnail img{
+  height: 250px;
+}
+
+#footer-left{
+  width: 50%;
+}
+
+#footer-right{
+  width: 50%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h1{ 
+  text-align: center; 
+  font-family: Pacifico;
+  color: rgb(86, 84, 82);
+
+}
+
+h3{
+  text-align: center;
+  padding: 20px;
+  font-family: Pacifico;
+}
+
+p{
+  text-align: center;
+
+}
+
+/*Below is for the FAQ page*/
+
+.ss_faq {
+  display: block;
+  background-color: #ea7210;
+
+}
+
+.ss_h3 {
+  display:block;
+  background-color: rgb(212, 212, 214);
+  float: right;
+  font-size: 18px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'PT Sans', sans-serif;
+  height: auto;
+ 
+  
+}
+ 
+
+.ss_h4 {
+  display:block;
+  background-color: rgb(212, 212, 214);
+  float: right;
+  font-size: 18px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'PT Sans', sans-serif;
+  
+}
+/*
+.ss_footer {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 12px;
+   display: block;
+  background-color: #ea7210;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  margin-top: 40px;
+  
 
 }*/
 
-.ss_btn {
-  border-radius: 12px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid;
-  font-family: "helvetica";
-  font-size: 20px;
-  letter-spacing: -1px; 
-  margin-left: 50%;
-  position: center;
-
-}
 
 
-.ss_btn: hover {
-    background-color: white;
-    color: black;
-}
-
-
-body > .container {
-  padding: 60px 15px 0;
-   padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
-
-.container .text-muted {
-  margin: 20px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-   background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-
-
-/*ADD ADD ADD */
-.ss_navbar {
-
-
-
-}
-
-.ss_faq {
-
-
-}
 
 
 
